@@ -1,4 +1,4 @@
-#放到 openClash-插件设置-开发者选项 内：
+# 以下代码放到 openClash-插件设置-开发者选项 内：
 
 #!/bin/sh  
 . /usr/share/openclash/log.sh  

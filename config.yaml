@@ -6,8 +6,8 @@
 
 proxy-providers:
 
-  优速通:
-    url: "https://23.158.136.185/api/v1/client/subscribe?token=99c17bd4414cff5b1fa4f7b75cf38651"
+  机场1:
+    url: "机场链接"
     type: http
     interval: 86400
     health-check:
@@ -16,8 +16,8 @@ proxy-providers:
       interval: 300
     proxy: 直连
 
-  牛逼:
-    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=3e0a55abc8e638572b4ccaec2de310dd"
+  机场2:
+    url: "机场链接"
     type: http
     interval: 86400
     health-check:
@@ -26,8 +26,8 @@ proxy-providers:
       interval: 300
     proxy: 直连
 
-  光速:
-    url: "https://rssgs.ei38d3if3.xyz/index/21790e59c41de081ac77e82b31508fa2"
+  机场3:
+    url: "机场链接"
     type: http
     interval: 86400
     health-check:
@@ -57,7 +57,7 @@ external-controller: 0.0.0.0:9090
 external-ui: ui
 external-ui-name: zashboard
 external-ui-url: https://gh-proxy.com/github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
-secret: "miss7042"
+secret: "123456"
 
 # ========================
 # DNS 设置
@@ -75,11 +75,6 @@ dns:
     - +.lan
     - +.local
     - geosite:cn
-# 牛逼   
-    - +.idsduf.com  
-    - +.66jc.top
-# 极速通        
-    - +.gfw.gg
 
 ipv6: true
 
@@ -190,4 +185,5 @@ rule-providers:
 
   Youtube / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"}  
   Google / Domain: {<<: *domain, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"}  
+
   Google / IP: {<<: *ip, url: "https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"}

@@ -1,4 +1,4 @@
-
+1
 config dns_servers
 	option enabled '0'
 	option group 'nameserver'
